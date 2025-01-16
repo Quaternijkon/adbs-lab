@@ -124,7 +124,7 @@ fn main() -> std::io::Result<()> {
             let page = zipf.sample(&mut rng);
 
             
-            writeln!(writer, "{} {}", op, page)?;
+            writeln!(writer, "{},{}", op, page)?;
         }
     }
 
